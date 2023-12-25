@@ -1,0 +1,234 @@
+2022-06-15 18:02:05.389 +05:30 [Error] An unhandled exception has occurred while executing the request
+Newtonsoft.Json.JsonReaderException: Error reading JObject from JsonReader. Current JsonReader item is not an object: Comment. Path '', line 40, position 3.
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at PurchaseTrackerAPI.BL.ConnectionString.SetConnectionString(String ConfigName) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 56
+   at PurchaseTrackerAPI.BL.ConnectionString.GetConnectionString(String ConfigName) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 65
+   at PurchaseTrackerAPI.DAL.CommonDAO.SelectServerDateTime() in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\DAL\commondao.cs:line 32
+   at PurchaseTrackerAPI.DAL.CommonDAO.get_ServerDateTime() in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\DAL\commondao.cs:line 78
+   at PurchaseTrackerAPI.Controllers.PurchasebookingController.GetMaterialWiseEnqOrSaudaInfoForDashboard(String roleId, String orgId, DateTime sysDate, Int32 isConvertToSauda) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\Controllers\PurchasebookingController.cs:line 153
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-15 18:02:05.406 +05:30 [Error] An unhandled exception has occurred while executing the request
+Newtonsoft.Json.JsonReaderException: Error reading JObject from JsonReader. Current JsonReader item is not an object: Comment. Path '', line 40, position 3.
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at PurchaseTrackerAPI.BL.ConnectionString.SetConnectionString(String ConfigName) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 56
+   at PurchaseTrackerAPI.BL.ConnectionString.GetConnectionString(String ConfigName) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 65
+   at PurchaseTrackerAPI.DAL.TblPurchaseVehicleSpotEntryDAO.SelectAllSpotEntryVehiclesCount(Int32 pmId, Int32 supplierId, Int32 materialTypeId) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\DAL\TblPurchaseVehicleSpotEntryDAO.cs:line 509
+   at PurchaseTrackerAPI.BL.TblPurchaseVehicleSpotEntryBL.SelectAllSpotEntryVehiclesCount(Int32 pmId, Int32 supplierId, Int32 materialTypeId) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\TblPurchaseVehicleSpotEntryBL.cs:line 143
+   at PurchaseTrackerAPI.Controllers.PurchaseVehicleReportController.GetVehicleSportEntrydetailsCount(Int32 pmId, Int32 supplierId, Int32 materialTypeId) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\Controllers\PurchaseVehicleReportController.cs:line 289
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-15 18:02:05.413 +05:30 [Error] An unhandled exception has occurred while executing the request
+Newtonsoft.Json.JsonReaderException: Error reading JObject from JsonReader. Current JsonReader item is not an object: Comment. Path '', line 40, position 3.
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at PurchaseTrackerAPI.BL.ConnectionString.SetConnectionString(String ConfigName) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 56
+   at PurchaseTrackerAPI.BL.ConnectionString.GetConnectionString(String ConfigName) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 65
+   at PurchaseTrackerAPI.BL.TblPurchaseBookingActionsBL.SelectLatestBookingActionTO() in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\TblPurchaseBookingActionsBL.cs:line 52
+   at PurchaseTrackerAPI.Controllers.PurchasebookingController.GetPurchaseBookingOpenCloseDashboardInfo() in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\Controllers\PurchasebookingController.cs:line 182
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-15 18:02:05.601 +05:30 [Error] An unhandled exception has occurred while executing the request
+Newtonsoft.Json.JsonReaderException: Error reading JObject from JsonReader. Current JsonReader item is not an object: Comment. Path '', line 40, position 3.
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at PurchaseTrackerAPI.BL.ConnectionString.SetConnectionString(String ConfigName) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 56
+   at PurchaseTrackerAPI.BL.ConnectionString.GetConnectionString(String ConfigName) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 65
+   at PurchaseTrackerAPI.DAL.CommonDAO.SelectServerDateTime() in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\DAL\commondao.cs:line 32
+   at PurchaseTrackerAPI.DAL.CommonDAO.get_ServerDateTime() in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\DAL\commondao.cs:line 78
+   at PurchaseTrackerAPI.Controllers.PurchaseVehicleReportController.GetVehicleList(String tblPurSchSummaryFilterTO) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\Controllers\PurchaseVehicleReportController.cs:line 131
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-15 18:02:05.609 +05:30 [Error] An unhandled exception has occurred while executing the request
+Newtonsoft.Json.JsonReaderException: Error reading JObject from JsonReader. Current JsonReader item is not an object: Comment. Path '', line 40, position 3.
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at PurchaseTrackerAPI.BL.ConnectionString.SetConnectionString(String ConfigName) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 56
+   at PurchaseTrackerAPI.BL.ConnectionString.GetConnectionString(String ConfigName) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 65
+   at PurchaseTrackerAPI.DAL.CommonDAO.SelectServerDateTime() in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\DAL\commondao.cs:line 32
+   at PurchaseTrackerAPI.DAL.CommonDAO.get_ServerDateTime() in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\DAL\commondao.cs:line 78
+   at PurchaseTrackerAPI.Controllers.PurchasebookingController.GetMaterialWiseEnqOrSaudaInfoForDashboard(String roleId, String orgId, DateTime sysDate, Int32 isConvertToSauda) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\Controllers\PurchasebookingController.cs:line 153
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-15 18:02:05.630 +05:30 [Error] An unhandled exception has occurred while executing the request
+Newtonsoft.Json.JsonReaderException: Error reading JObject from JsonReader. Current JsonReader item is not an object: Comment. Path '', line 40, position 3.
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at PurchaseTrackerAPI.BL.ConnectionString.SetConnectionString(String ConfigName) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 56
+   at PurchaseTrackerAPI.BL.ConnectionString.GetConnectionString(String ConfigName) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 65
+   at PurchaseTrackerAPI.DAL.CommonDAO.SelectServerDateTime() in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\DAL\commondao.cs:line 32
+   at PurchaseTrackerAPI.DAL.CommonDAO.get_ServerDateTime() in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\DAL\commondao.cs:line 78
+   at PurchaseTrackerAPI.Controllers.PurchaseVehicleReportController.GetVehSummaryForDashboard(String tblPurSchSummaryFilterTO) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\Controllers\PurchaseVehicleReportController.cs:line 156
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-15 18:02:06.398 +05:30 [Error] An unhandled exception has occurred while executing the request
+Newtonsoft.Json.JsonReaderException: Error reading JObject from JsonReader. Current JsonReader item is not an object: Comment. Path '', line 40, position 3.
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at PurchaseTrackerAPI.BL.ConnectionString.SetConnectionString(String ConfigName) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 56
+   at PurchaseTrackerAPI.BL.ConnectionString.GetConnectionString(String ConfigName) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 65
+   at PurchaseTrackerAPI.DAL.CommonDAO.SelectServerDateTime() in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\DAL\commondao.cs:line 32
+   at PurchaseTrackerAPI.DAL.CommonDAO.get_ServerDateTime() in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\DAL\commondao.cs:line 78
+   at PurchaseTrackerAPI.BL.TblPurchaseScheduleSummaryBL.GetVehTotalQtyDashboardInfo(String loginUserId) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\TblPurchaseScheduleSummaryBL.cs:line 23222
+   at PurchaseTrackerAPI.Controllers.PurchaseVehicleReportController.GetVehTotalQtyDashboardInfo(String loginUserId) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\Controllers\PurchaseVehicleReportController.cs:line 2181
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-15 18:02:06.406 +05:30 [Error] An unhandled exception has occurred while executing the request
+Newtonsoft.Json.JsonReaderException: Error reading JObject from JsonReader. Current JsonReader item is not an object: Comment. Path '', line 40, position 3.
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at PurchaseTrackerAPI.BL.ConnectionString.SetConnectionString(String ConfigName) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 56
+   at PurchaseTrackerAPI.BL.ConnectionString.GetConnectionString(String ConfigName) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 65
+   at PurchaseTrackerAPI.DAL.TblDashboardEntityDAO.SelectAllDashboardEntityListByModuleId(Int32 moduleId) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\DAL\TblDashboardEntityDAO.cs:line 92
+   at PurchaseTrackerAPI.BL.TblDashboardEntityBL.SelectTblDashboardEntityListByModuleId(Int32 moduleId) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\TblDashboardEntityBL.cs:line 58
+   at PurchaseTrackerAPI.Controllers.DashboardEntityController.GetAllDashboardEntityList(Int32 moduleId) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\Controllers\DashboardEntityController.cs:line 34
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-15 18:02:19.990 +05:30 [Error] An unhandled exception has occurred while executing the request
+Newtonsoft.Json.JsonReaderException: Error reading JObject from JsonReader. Current JsonReader item is not an object: Comment. Path '', line 40, position 3.
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at PurchaseTrackerAPI.BL.ConnectionString.SetConnectionString(String ConfigName) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 56
+   at PurchaseTrackerAPI.BL.ConnectionString.GetConnectionString(String ConfigName) in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 65
+   at PurchaseTrackerAPI.DAL.TblConfigParamsDAO.SelectAllTblConfigParams() in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\DAL\TblConfigParamsDAO.cs:line 45
+   at PurchaseTrackerAPI.BL.TblConfigParamsBL.SelectAllTblConfigParamsList() in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\TblConfigParamsBL.cs:line 38
+   at PurchaseTrackerAPI.Controllers.ConfigurationController.GetAllSystemConfigList() in C:\Users\Nikesh\Documents\WATWorkspace\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\Controllers\ConfigurationController.cs:line 49
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)

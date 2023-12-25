@@ -1,0 +1,48 @@
+2022-11-15 09:19:48.103 +05:30 [Error] An unhandled exception has occurred while executing the request
+Newtonsoft.Json.JsonReaderException: Error reading JObject from JsonReader. Current JsonReader item is not an object: Comment. Path '', line 40, position 3.
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at PurchaseTrackerAPI.BL.ConnectionString.SetConnectionString(String ConfigName) in E:\Simpli Work Mask BC\Simpli Recycle\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 56
+   at PurchaseTrackerAPI.BL.ConnectionString.GetConnectionString(String ConfigName) in E:\Simpli Work Mask BC\Simpli Recycle\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\ConnectionString.cs:line 65
+   at PurchaseTrackerAPI.DAL.TblConfigParamsDAO.SelectTblConfigParamsValByName(String configParamName) in E:\Simpli Work Mask BC\Simpli Recycle\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\DAL\TblConfigParamsDAO.cs:line 102
+   at PurchaseTrackerAPI.BL.TblConfigParamsBL.SelectTblConfigParamsValByName(String configParamName) in E:\Simpli Work Mask BC\Simpli Recycle\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\TblConfigParamsBL.cs:line 47
+   at PurchaseTrackerAPI.Controllers.ConfigurationController.GetSystemConfigParamValByName(String configParamName) in E:\Simpli Work Mask BC\Simpli Recycle\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\Controllers\ConfigurationController.cs:line 40
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-15 15:06:02.125 +05:30 [Error] An unhandled exception has occurred while executing the request
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at PurchaseTrackerAPI.DAL.TblPurchaseScheduleSummaryDAO.SelectAllEnquiryScheduleSummaryTOByRootID(Int32 RootScheduleId, Boolean isActive) in E:\Simpli Work Mask BC\Simpli Recycle\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\DAL\TblPurchaseScheduleSummaryDAO.cs:line 841
+   at PurchaseTrackerAPI.BL.TblPurchaseScheduleSummaryBL.SelectAllEnquiryScheduleSummaryTOByRootScheduleID(Int32 RootScheduleId, Boolean isActive) in E:\Simpli Work Mask BC\Simpli Recycle\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\TblPurchaseScheduleSummaryBL.cs:line 324
+   at PurchaseTrackerAPI.Controllers.PurchaseVehicleReportController.GetScheduleDetailsByRootId(Int32 rootScheduleId, Boolean isActive) in E:\Simpli Work Mask BC\Simpli Recycle\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\Controllers\PurchaseVehicleReportController.cs:line 635
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)

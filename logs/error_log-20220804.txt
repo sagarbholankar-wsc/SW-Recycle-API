@@ -1,0 +1,44 @@
+2022-08-04 18:34:20.690 +05:30 [Error] An unhandled exception has occurred while executing the request
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at PurchaseTrackerAPI.DAL.DimensionDAO.SelectDimMasterValues(Int32 masterId) in E:\Simpli Work Mask BC\Simpli Recycle\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\DAL\dimensiondao.cs:line 144
+   at PurchaseTrackerAPI.BL.DimensionBL.SelectDimMasterValues(Int32 masterId) in E:\Simpli Work Mask BC\Simpli Recycle\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\dimensionbl.cs:line 37
+   at PurchaseTrackerAPI.Controllers.MastersController.SelectDimMasterValues(Int32 masterId) in E:\Simpli Work Mask BC\Simpli Recycle\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\Controllers\masterscontroller.cs:line 254
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-04 18:37:29.611 +05:30 [Error] An unhandled exception has occurred while executing the request
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at PurchaseTrackerAPI.DAL.TblPurchaseVehLinkSaudaDAO.SelectPurchaseVehLinkSauda(Int32 rootScheduleId) in E:\Simpli Work Mask BC\Simpli Recycle\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\DAL\TblPurchaseVehLinkSaudaDAO.cs:line 113
+   at PurchaseTrackerAPI.BL.TblPurchaseVehLinkSaudaBL.SelectTblPurchaseVehLinkSauda(Int32 rootScheduleId, SqlConnection conn, SqlTransaction tran) in E:\Simpli Work Mask BC\Simpli Recycle\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\BL\TblPurchaseVehLinkSaudaBL.cs:line 42
+   at PurchaseTrackerAPI.Controllers.PurchaseVehicleReportController.GetVehicleLinkSaudaDtls(Int32 rootScheduleId) in E:\Simpli Work Mask BC\Simpli Recycle\simpliMaterialAPICode\PurchaseTrackerAPICode\PurchaseTrackerAPI\Controllers\PurchaseVehicleReportController.cs:line 2240
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
